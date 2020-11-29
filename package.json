@@ -4,7 +4,7 @@
   "description": "Hackernews clone creation project!",
   "main": "index.js",
   "scripts": {
-    "start": "npm build && node index.js",
+    "start": "yarn build && node index.js",
     "build": "webpack --config webpack.config.js",
     "test": "jest",
     "heroku-postbuild": "npm run build"
