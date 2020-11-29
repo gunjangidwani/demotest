@@ -1,0 +1,203 @@
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+body {
+  max-width: 100%;
+}
+/* ##Device = Desktops ##Screen = 1281px to higher resolution desktops */
+/* ##Device = Tablets, Ipads (portrait) ##Screen = B/w 768px to 1024px */
+@media (min-width: 700px) and (max-width: 1440px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f3f5;
+    max-width: 100%;
+ }
+  .container .programs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+  .container .programs .filterContainer {
+    background-color: white;
+    flex-direction: row;
+    max-width: 11rem;
+    height: 50%;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+ }
+  .container .programs .filterContainer .primmaryBtn {
+    cursor: pointer;
+    padding: 8px;
+    margin: 12px;
+    background-color: #c5e09b;
+    border: 0;
+    border-radius: 5px;
+ }
+  .container .programs .filterContainer .active {
+    background-color: #058605;
+    cursor: not-allowed;
+    color: #eee;
+ }
+  .container .programs .filterContainer hr {
+    width: 60%;
+ }
+  .container .programs .filterContainer .filterBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+  .container .programs .filterContainer .filterBox .btnGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+  .container .programs .flightContainer {
+    max-width: 70%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+ }
+  .container .programs .flightContainer .cardContainer {
+    max-width: 28%;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    max-height: 48%;
+ }
+  .container .programs .flightContainer .cardContainer img {
+    width: 100px;
+    background-color: #f2f3f5;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+  .container .programs .flightContainer .cardContainer h5 {
+    color: #007aff;
+    margin: 5px;
+    max-width: fit-content;
+ }
+  .container .programs .flightContainer .cardContainer strong {
+    font-size: 12px;
+ }
+}
+/* ##Device = Low Resolution Tablets, Mobiles (Landscape) ##Screen = B/w 481px to 767px */
+@media only screen and (max-width: 699px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f3f5;
+    max-width: 100%;
+    align-items: center;
+ }
+  .container .programs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+  .container .programs .filterContainer {
+    background-color: white;
+    flex-direction: row;
+    max-width: 11rem;
+    height: 50%;
+    margin-left: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+ }
+  .container .programs .filterContainer .primmaryBtn {
+    cursor: pointer;
+    padding: 8px;
+    margin: 12px;
+    background-color: #c5e09b;
+    border: 0;
+    border-radius: 5px;
+ }
+  .container .programs .filterContainer .active {
+    background-color: #058605;
+    cursor: not-allowed;
+    color: #eee;
+ }
+  .container .programs .filterContainer hr {
+    width: 60%;
+ }
+  .container .programs .filterContainer .filterBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+  .container .programs .filterContainer .filterBox .btnGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+  .container .programs .flightContainer {
+    max-width: 70%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+ }
+  .container .programs .flightContainer .cardContainer {
+    max-width: 100%;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    max-height: 48%;
+ }
+  .container .programs .flightContainer .cardContainer img {
+    width: 100px;
+    background-color: #f2f3f5;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+  .container .programs .flightContainer .cardContainer h5 {
+    color: #007aff;
+    margin: 5px;
+    max-width: fit-content;
+ }
+  .container .programs .flightContainer .cardContainer strong {
+    font-size: 12px;
+ }
+}
+#root {
+  min-height: 100%;
+  position: relative;
+}
+nav {
+  padding: 20px;
+  background: #f2f3f5;
+  margin-bottom: 40px;
+}
+.main {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 200px;
+}
+.footer {
+  text-align: center;
+}
+.active {
+  color: #007aff;
+}

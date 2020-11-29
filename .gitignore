@@ -1,0 +1,9 @@
+node_modules
+lib
+*.log
+.idea
+
+# vscode ide stuff
+*.code-workspace
+.history
+.vscode

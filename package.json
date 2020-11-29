@@ -1,0 +1,52 @@
+{
+  "name": "assignment_react_xt",
+  "version": "1.0.0",
+  "description": "Hackernews clone creation project!",
+  "main": "index.js",
+  "scripts": {
+    "start": "yarn build && node index.js",
+    "build": "webpack --config webpack.config.js",
+    "test": "jest"
+  },
+  "author": "Subi Vasudev",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/register": "^7.8.6",
+    "babel-jest": "^23.6.0",
+    "bootstrap": "^4.4.1",
+    "express": "^4.17.1",
+    "isomorphic-unfetch": "^3.1.0",
+    "jest": "^21.2.1",
+    "jest-cli": "^21.2.1",
+    "node-sass": "^5.0.0",
+    "react": "^16.13.0",
+    "react-bootstrap": "^1.0.0",
+    "react-dom": "^16.13.0",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "yarn": "^1.22.4",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-react": "^7.8.3",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^5.0.1",
+    "enzyme": "^2.9.1",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^5.2.0",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.11"
+  }
+}
