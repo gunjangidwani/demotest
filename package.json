@@ -4,9 +4,10 @@
   "description": "Hackernews clone creation project!",
   "main": "index.js",
   "scripts": {
-    "start": "yarn build && node index.js",
+    "start": "npm build && node index.js",
     "build": "webpack --config webpack.config.js",
-    "test": "jest"
+    "test": "jest",
+    "heroku-postbuild": "npm run build"
   },
   "author": "Subi Vasudev",
   "license": "ISC",
