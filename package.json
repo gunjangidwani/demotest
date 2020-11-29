@@ -7,7 +7,7 @@
     "start": "yarn build && node index.js",
     "build": "webpack --config webpack.config.js",
     "test": "jest",
-    "heroku-prebuild": "npm install --dev",
+    "heroku-prebuild": "npm install --dev"
   },
   "author": "Subi Vasudev",
   "license": "ISC",
