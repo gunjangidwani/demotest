@@ -9,6 +9,7 @@ const Home = () => {
   const [launchYear, setLaunchYear] = useState('');
   const [successfulLanding, setSuccessfulLanding] = useState('');
   const [successfulLaunch, setSuccessfulLaunch] = useState('');
+  const [loader, setLoader] = useState(false);
 
   const updateFilterType = (filterType, value) => {
     switch (filterType) {
@@ -29,12 +30,16 @@ const Home = () => {
   useEffect(() => {
     if (launchYear || successfulLaunch || successfulLanding) {
       const filterParameter = `&launch_success=${successfulLaunch}&land_success=${successfulLanding}&launch_year=${launchYear}`;
+      setLoader(true);
       api.spacesX.applyFilter(filterParameter).then(res => {
         setPrograms(res);
+        setLoader(false);
       });
     } else {
+      setLoader(true);
       api.spacesX.applyFilter('/').then(res => {
         setPrograms(res);
+        setLoader(false);
       });
     }
   }, [successfulLaunch, successfulLanding, launchYear]);
@@ -53,7 +58,7 @@ const Home = () => {
           successfulLanding={successfulLanding}
           successfulLaunch={successfulLaunch}
         />
-        <Flight programs={programs} />
+        {loader ? <Flight programs={programs} /> : "...loading"}
       </div>
       <div className="footer">
         <h5>Developed by: Gunjan Gidwani </h5>

@@ -196,7 +196,11 @@ nav {
   padding-bottom: 200px;
 }
 .footer {
+  position: fixed;
   text-align: center;
+  top: calc(100% - 5%);
+  background-color: gray;
+  width: 100%;
 }
 .active {
   color: #007aff;

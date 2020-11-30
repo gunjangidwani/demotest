@@ -14,6 +14,7 @@ export default function template(title, initialState = {}, content = "") {
               <html lang="en">
               <head>
                 <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width,initial-scale=1.0">
                 <title> ${title} </title>
                 <link href="assets/style.css" rel="stylesheet">
                 <link
